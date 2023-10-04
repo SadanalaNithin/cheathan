@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> online shoping</title>
+    <link rel="Website icon" href="https://freepngimg.com/thumb/letter/130258-s-letter-hd-image-free.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<style>
+  
+#top-bar
+{
+    border: 1px solid black;
+    height: 90px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+#logo
+{
+height: 40px;
+width: 40px;
+position: absolute;
+top:16px;
+left:60px;
+}
+#con
+{
+position: absolute;
+top:30px;
+left:93px;
+}
+#location
+{
+position: absolute;
+left:200px;
+top:10px;
+}
+#map
+{
+position: absolute;
+height: 20px;
+left:50px;
+top:25px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#mapshow
+{
+border: 1px solid black;
+display: flex;
+justify-content: center;
+width: 500px;
+border-radius: 30px;
+border-top: 10px solid black;
+border-bottom: 5px solid black;
+position: absolute;
+left:130px;
+}
+#mapshow iframe
+{
+border-radius: 30px;
+}
+#search
+{
+  color: white;
+}
+#sea
+{
+  width: 60px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#drop-down-list
+{
+   display: flex;
+   position: absolute;
+   left:400px;
+   top:20px;
+   height: 35px;
+}
+#drop-down
+{
+background-color: gray;
+width: 100px;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+}
+#all
+{
+font-size: 3px;;
+}
+#search
+{
+width:500px;
+background-color: black;
+border: 1px solid gray;
+}
+#cart
+{
+position: absolute;
+left:1130px;
+top:15px;
+}
+#cart2
+{
+border: none;
+background-color: black;
+color: white;
+font-size: 27px;
+height:50px;
+}
+#cart2:hover
+{
+border:1px solid gray;
+border-radius: 50%;
+background-color: rgb(35, 30, 30);
+}
+#notifications
+{
+border: none;
+background-color: black;
+color: white;
+font-size: 27px;
+position: absolute;
+left:60px;
+}
+#notifications i:hover
+{
+color: green;
+}
+#hr
+{
+border: 1px solid white;
+width: 0;
+height: 50px;
+position: absolute;
+top:0px;
+left:120px;
+}
+#user
+{
+position: absolute;
+left:1270px;
+top:16px;
+font-size: 30px;
+display: flex;
+}
+#user2
+{
+border: none;
+background-color: black;
+color: white;
+}
+#signup
+{
+border: 1px solid black;
+position: absolute;
+top:100px;
+height: 400px;
+width: 250px;
+left:1280px;
+border-radius: 10px;
+box-shadow: 5px 10px black;
+}
+#signup h5
+{
+position: absolute;
+left:60px;
+}
+#signup label,input 
+{
+display: block;
+}
+#signup input 
+{
+height: 30px;
+width: 200px;
+border-bottom: 3px solid black;
+border-radius: 6px;
+}
+#signup .firstname
+{
+position: absolute;
+top:80px;
+left:10px;
+}
+#signup .email
+{
+position: absolute;
+top:130px;
+left:10px;
+}
+#signup .pass
+{
+position: absolute;
+top:180px;
+left:10px;
+}
+#signup .pass1
+{
+position: absolute;
+top:230px;
+left:10px;
+}
+#signup .submit
+{
+position: absolute;
+top:310px;
+left:10px;
+width:200px;
+border-radius: 5px;
+
+}
+#choose
+{
+display: flex;
+position: absolute;
+top:30px;
+left:50px;
+}
+#choose button 
+{
+border-radius: 3px;
+}
+#login input 
+{
+height: 30px;
+width: 200px;
+border-bottom: 3px solid black;
+border-radius: 6px;
+left:10px;
+}
+#login .logname
+{
+position: absolute;
+top:100px;
+}
+#login h5
+{
+position: absolute;
+top:60px;
+left:60px;
+}
+#login .logpass
+{
+position: absolute;
+top:170px;
+}
+#login .logsubmit
+{
+position: absolute;
+top:240px;
+}
+#toatsbox
+{
+position: absolute;
+bottom: 30px;
+right:30px;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+overflow: hidden;
+padding: 20px;
+
+}
+
+#eyeopen
+{
+position: absolute;
+top:260px;
+left:160px;
+font-size: 30px;
+}
+#eyeopen
+{
+   border:none;
+   background-color: white;
+}
+#eyeopenl
+{
+position: absolute;
+top:200px;
+left:160px;
+font-size: 30px;
+border:none;
+background-color: white;
+}
+#eyel
+{
+position: absolute;
+top:210px;
+left:120px;
+}
+#eyel i
+{
+position: absolute;
+top:210px;
+left:40px;
+} 
+#eye
+{
+position: absolute;
+top:270px;
+left:120px;
+}
+#err
+{
+position: absolute;
+left:60px;
+top:55px;
+}
+#language
+{
+position: absolute;
+left:1420px;
+top:10px
+}
+#lan
+{
+width: 50px;
+}
+#navbar
+{
+border: 1px solid gray;
+height: 40px;
+background-color: gray;
+color: white;
+width: 100vw;
+}
+#navbar a 
+{
+color: black;
+text-decoration: none;
+padding-left: 60px;
+font-weight: bold;
+}
+#navbar a:hover
+{
+color: white;
+}
+#sliders
+{
+width: 100vw;
+height: 300px;
+border: 1px solid black;
+background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/BAU2023/ATFGW/July_Bedsheets_Desk_3000x1200_Unrec._CB601155232_.jpg");
+background-repeat: no-repeat;
+background-size: 100vw;
+animation: slider 5s infinite linear;
+}
+#sliders img:active
+{
+width: 100vw;
+height: 200px;
+}
+#sliders img
+{
+width: 100vw;
+height: 200px;
+position: relative;
+z-index: 0;
+}
+#bacimg1
+{
+position: absolute;
+left:0%;
+top:150px;
+background-color: black;
+color: white;
+width: 200px;
+box-shadow: 6px 6px 6px 6px black;
+}
+#bacimg2
+{
+position: absolute;
+left:0%;
+top:250px;
+background-color: black;
+color: white;
+width: 200px;
+box-shadow: 6px 6px 6px 6px black;
+}
+#bacimg3
+{
+position: absolute;
+left:0%;
+top:350px;
+background-color: black;
+color: white;
+width: 200px;
+box-shadow: 6px 6px 6px 6px black;
+}
+@keyframes slider
+{
+0%
+{
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Shreyansh/BAU/Unrexc/D70978891_INWLD_BAU_Unrec_Uber_PC_Hero_3000x1200._CB594707876_.jpg");
+}
+50%
+{
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img2020/Vernac/2021/Gw-Hero/Mobile_tall_Hero_revision_3000x1200._CB604857279_.jpg");
+}
+
+}
+#gasstove
+{
+border: 1px solid black;
+max-height: 200px;
+display: flex;
+overflow-x: auto;
+}
+#gasstove::-webkit-scrollbar {
+display: none;
+}
+#frequently  img
+{
+height: 150px;
+background: none;
+mix-blend-mode: darken;
+border: 1px solid black;
+padding-left: 40px;
+box-shadow: 6px 6px 6px 3px black;
+}
+.product img:hover
+{
+transform: scale(0.9);
+}
+#fre
+{
+background-color: black;
+color: white;
+text-shadow: 1px 1px 1px 1px black;
+}
+#details
+{
+border: 1px solid black;
+height: 75vh;
+width: 90vw;
+background-color: white;
+position: relative;
+  text-align: center;
+  overflow-y: scroll;
+  top:-700px;
+  left:60px;
+  box-shadow: 20px 20px 20px 20px black;
+}
+#details #dhidden 
+{
+border:1px solid black;
+}
+#details #dhidden :hover
+{
+border:1px solid black;
+background-color: red;
+color: black;
+}
+#todaysdeals
+{
+border: 1px solid black;
+height: 100px;
+width: 100px;
+}
+#details-individual
+{
+border: 1px solid black;
+height: 50vh;
+width: 18vw;
+background-color: white;
+position: absolute;
+top:150px;
+left:100px;
+box-shadow: 6px 6px 6px 6px black;
+left: 33%;
+}
+#addtocart
+{
+position: absolute;
+top:320px;
+left:15px;
+}
+#buynow
+{
+position: absolute;
+top:320px;
+left:150px;
+}
+#placeimage
+{
+height: 100px;
+width: 120px;
+}
+#exitdetailsindividual
+{
+position: absolute;
+left:240px;
+top:2px;
+}
+#exitdetailsindividual:hover
+{
+background-color: red;
+}
+#stars
+{
+color: gold;
+
+}
+#price
+{
+position: absolute;
+left:0px;
+top:200px;
+}
+#priceindividual del
+{
+position: absolute;
+left:40px;
+top:227px;
+}
+#priceindividual #mrp
+{
+position: absolute;
+top:230px;
+}
+#buynow a
+{
+text-decoration: none;
+}
+.individualproduct
+{
+border: 1px solid black;
+width: 300px;
+}
+
+#time
+{
+    position: absolute;
+    top:660px;
+    font-size: 20px;
+    
+    border: 1px solid black;
+ 
+    width: 70px;
+}
+#btn
+{
+    position: absolute;
+    top:500px;
+}
+
+#hrs,#minutes,#seconds
+{
+    height: 20px;
+    border: 1px solid black;
+    text-shadow: 6px 6px 6px 6px black;  
+    background-color: black;
+    color: white;
+    left:10px; 
+}
+#books
+{
+  text-align: center;
+position: absolute;
+top:2410px;
+}
+#books .product
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#books .pro
+{
+  width: 6%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#books .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+}
+#books button
+{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+#books button:hover
+{
+  background-color: green;
+  border-radius: 30px;
+}
+#todaysdeals
+{
+  text-align: center;
+position: absolute;
+top:700px;
+}
+#todaysdeals .product
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#todaysdeals .pro
+{
+  width: 13%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#todaysdeals .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+}
+.ttl
+{
+  font-size: 10px;
+  font-weight: bold;
+}
+.star
+{
+  color: gold;
+}
+#todaysdeals button
+{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+#todaysdeals button:hover
+{
+  background-color: green;
+  border-radius: 30px;
+}
+#insidecart
+{
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  height: 700px;
+  width: 700px;
+  left:350px;
+  top:-480px;
+  box-shadow: 6px 6px 6px 6px black;
+}
+#closecartitems
+{
+  position: absolute;
+  left:660px;
+  top:0px;
+}
+#closecartitems:hover
+{
+ background-color: red;
+}
+#insidecart img
+{
+  height: 100px;
+}
+#insidecart
+{
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 550px;
+width: 45vw;
+}
+#insidecart
+{
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+#insidecart::-webkit-scrollbar {
+display: none;
+}
+a
+{
+  text-decoration: none;
+}
+#insidecart #rmbtn,#buybtn
+{
+  border:2px solid green;
+  background-color: transparent;
+  border-radius: 3px;
+}
+#insidecart #rmbtn:hover,#buybtn:hover
+{
+  background-color: green;
+  color: white;
+}
+#insidecart div
+{
+  border: 1px solid black;
+  box-shadow: 6px 6px 6px 6px black;
+  width: 45vw;
+}
+#electronics
+{
+  border: 1px solid black;
+  height: 75vh;
+  width: 100vw;
+  background-color: skyblue;
+  position: relative;
+  top:1030px;
+}
+#electronics #ttl
+{
+  display: flex;
+  justify-content: center;
+}
+#electronics #mobiles,#laptops
+{
+  
+  height: 25vh;
+  box-shadow: 6px 6px 6px 6px black;
+}
+#electronics #cameras
+{
+  border: 1px solid black;
+  height: 19vh;
+}
+#mobiles #mhead
+{
+  position: absolute;
+  top:180px;
+}
+#mviewall
+{
+  position: absolute;
+  left:89vw;
+  top:5px;
+}
+#lviewall
+{
+  position:absolute;
+  left:89vw;
+  top:235px;
+}
+#lviewall:hover
+{
+ background-color: green;
+ color: white;
+}
+#electronics img
+{
+  height: 100px;
+  position: relative;
+  margin: 20px;
+  top:0px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 6px 6px black;
+  display: flex;
+  justify-content: space-between;
+}
+#electronics #mobiles
+{
+  border: 1px solid black;
+  left:100px;
+}
+
+#details .product
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#details .pro
+{
+  width: 13%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#details .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+  height: 200px;
+}
+.ttl
+{
+  font-size: 10px;
+  font-weight: bold;
+}
+.star
+{
+  color: gold;
+}
+#details button,#searchcontentitem .addbtn
+{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+#details button:hover,#searchcontentitem .addbtn:hover
+{
+  background-color: green;
+  border-radius: 30px;
+}
+#dhidden
+{
+  border:1px solid black;
+  height: 40px;
+  position: relative;
+  left:650px;
+  color: black;
+}
+#dhidden:hover
+{
+  border:1px solid black;
+  height: 40px;
+  position: relative;
+  left:650px;
+  color: red;
+}
+#lhidden
+{
+  position: relative;
+  left:650px;
+  border:1px solid black;
+  height: 40px;
+  color: red;
+}
+#incr
+{
+  position: relative;
+  top:-52px;
+  left:16px;
+  font-size: 20px;
+  color: green;
+  text-shadow: 2px 2px #ff0000
+}
+#detailslappy
+{
+border: 1px solid black;
+height: 75vh;
+width: 90vw;
+background-color: white;
+position: relative;
+  text-align: center;
+  overflow-y: scroll;
+  top:-700px;
+  left:60px;
+  box-shadow: 20px 20px 20px 20px black;
+}
+#detailslappy .product
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#detailslappy .pro
+{
+  width: 13%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#detailslappy .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+  height: 200px;
+}
+.ttl
+{
+  font-size: 10px;
+  font-weight: bold;
+}
+.star
+{
+  color: gold;
+}
+#detailslappy button
+{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+#detailslappy button:hover
+{
+  background-color: green;
+  border-radius: 30px;
+}
+#searchcontentitem
+{
+  
+  height: 400px;
+  width: 1200px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  position: relative;
+  left:120px;
+  top:-480px;
+  overflow-y: scroll;
+}
+#searchcontentitem .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+  height: 200px;
+}
+#searchcontentitem .pro
+{
+  width: 13%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#searchcontentitem .product
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#search-item
+{
+  width: 600px;
+}
+body[lang="hi"] {
+font-family: "Noto Sans Devanagari", sans-serif;
+text-align: right;
+}
+#searchclick
+{
+  border: 1px solid black;
+  position: relative;
+  height: 400px;
+  background-color: white;
+  top:-1350px;
+  left:500px;
+  width: 600px;
+}
+.divtxt img 
+{
+  height: 50px;
+  width: 50px;
+}
+#usha
+{
+  position: relative;
+  left:93px;
+  top:130px;
+  background-color: black;
+  font-weight: bold;
+  color: red;
+}
+#home
+{
+  text-align: center;
+position: absolute;
+top:4200px;
+}
+#home .product
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#home .pro
+{
+  width: 13%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#home .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+}
+#home button
+{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+#home button:hover
+{
+  background-color: green;
+  border-radius: 30px;
+}
+#promotion
+{
+  text-align: center;
+position: absolute;
+top:5250px;
+background-color: black;
+}
+#giveaway
+{
+  border: 1px solid white;
+  height: 740px;
+  width: 400px;
+  box-shadow: 6px 6px 6px 0px rgb(66, 63, 63);
+}
+#giveawayform
+{
+  position: absolute;
+  left:100px;
+  top:400px
+}
+#dealsoftheday
+{
+  border: 1px solid white;
+  height: 740px;
+  width: 400px;
+  position: absolute;
+  left:500px;
+  top:0px;
+  box-shadow: 6px 6px 6px 0px rgb(66, 63, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dealsoftheday button 
+{
+  position: absolute;
+}
+#arrow i
+{
+  animation: updown 0.5s infinite linear;
+}
+@keyframes updown {
+  from 
+  {
+    top:200px;
+  }
+  to 
+  {
+    top:300px;
+  }
+}
+#about
+{
+  text-align: center;
+position: absolute;
+top:7100px;
+background-color: black;
+}
+#social
+{
+    position: absolute;
+    top:270px;
+    font-size: 30px;
+}
+#f
+{
+    position: absolute;
+    left: 20px;
+}
+#sn
+{
+    position: absolute;
+    left:70px;
+}
+#i
+{
+    position: absolute;
+    left:120px;
+}
+#l
+{
+    position: absolute;
+    left:170px;
+}
+#f:hover
+{
+    color: blue;
+    text-shadow: 0px 0px 20px blue;
+}
+#sn:hover
+{
+    color: yellow;
+    text-shadow: 0px 0px 20px yellow;
+}
+#i:hover
+{
+    color: darkred;
+    text-shadow: 0px 0px 20px darkred;
+}
+#l:hover
+{
+    color: skyblue;
+    text-shadow: 0px 0px 20px white;
+}
+#sports
+{
+  text-align: center;
+position: absolute;
+top:5994px;
+background-color: white;
+}
+#sports .product
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#sports .pro
+{
+  width: 13%;
+  min-width: 120px;
+  padding: 10px 10px;
+  border: 1px solid #cce7d0;
+}
+#sports .pro img
+{
+  width: 100%;
+  border-radius: 20px;
+}
+#sports button
+{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  
+}
+#sports button:hover
+{
+  background-color: green;
+  border-radius: 30px;
+}
+.addbtn
+{
+  border: 1px solid black;
+}
+#removebutton
+{
+  display: none;
+}
+#abmap
+{
+  position: absolute;
+  left:1100px;
+  top:200px;
+}
+</style>
+<body>
+     <div id="top-bar">
+      <div id="title">
+        <img id="logo" src="https://freepngimg.com/thumb/letter/130258-s-letter-hd-image-free.png"><span id="con">ai varun</span>
+      </div>
+      <div id="location">
+        <i id="loc" class="bi bi-geo-alt-fill">Deliver To</i><button type="button" class="btn btn-outline-info" id="map" onclick="map()">Map</button>
+      </div>
+      <button onclick="usha()" id="usha" hidden>X</button>
+      <div id="drop-down-list">
+        
+      
+      <input type="Search" placeholder="Search product here....." onclick="searchitem()" onkeyup="searchsearch()" id="search-item">
+      </div>
+
+      <!--4814-->
+      <div id="cart">
+        <button id="cart2"><i class="bi bi-cart-check" onclick="cartitemsad()"><h6 id="incr">0</h6></i></button>
+        <button id="notifications" onclick="not()"><i class="bi bi-bell-fill"></i></button>
+        <div id="hr"></div>
+      </div>
+      
+  </div>
+     </div>
+     
+  </div>
+  
+  
+  </div>
+
+  
+  <div id="searchcontentitem" hidden> 
+</div>
+    <div id="insidecart" hidden>
+      <h4>Cart-Items</h4>
+      <button id="closecartitems" onclick="closecartitems()">X</button>
+    </div>
+  
+  <div id="details-individual" hidden>
+    <button id="exitdetailsindividual" onclick="exitdetailsindividual()">X</button>
+    <button type="button" id="addtocart" class="btn btn-outline-warning" onclick="addtocart100()">AddToCart</button>
+    <button type="button" id="buynow" class="btn btn-outline-success" onclick="sendtobuy()"><a href="payment.html">Buy Now</a></button>
+    <img src="" id="placeimage" class="product1">
+    <h6 id="producttitle" class="ttl"></h6>
+    <h6 id="stars"></h6>
+    <b id="priceindividual">
+      <h6 id="mrp">MRP</h6>
+      <del id="original"></del>
+      <b id="price"></b>
+    </b>
+  </div>
+  
+</div>
+ 
+  <section id="sports" style="width: 100vw;height: 900px;">
+    <div class="product">
+      <div class="pro">
+        <img id="addimg201is" class="product1" src="https://m.media-amazon.com/images/I/61RpRYFb2wL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg201ts">Nivia Storm Football | Rubberized Moulded | Suitable for Hard Ground Without Grass | Training Ball </p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg201ps">389</h4>
+        </div>
+        <button class="addbtn" onclick="addimg201s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg202is" class="product1" src="https://m.media-amazon.com/images/I/71vih6Kw9FL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg202ts">Jaspo Slog Heavy Duty Plastic Cricket Bat,Full Size (34” X 4.5”inches) Premium Bat </p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg202ps">349</h4>
+        </div>
+        <button class="addbtn" onclick="addimg202s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg203is" class="product1" src="https://m.media-amazon.com/images/I/51cWUJHECZL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg203ts">Jaspo Cricket Ball for Practice, Training, and Matches for All Age Groups (Knocking Ball, Hard Shot Ball, T-20 Soft Ball ) </p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg203ps">278</h4>
+        </div>
+        <button class="addbtn" onclick="addimg203s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg204is" class="product1" src="https://m.media-amazon.com/images/I/71Cuuje2xOS._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg204ts">Whackk Scorer Blue, Yellow Cricket kit Bag (9030)</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg204ps">1401</h4>
+        </div>
+        <button class="addbtn" onclick="addimg205s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg205is" class="product1" src="https://m.media-amazon.com/images/I/71KyUQ9vmwL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg205ts">SG Full Cricket Kit with Duffle Bag and Trycom Brand Ball(with helmat)</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg205ps">7250</h4>
+        </div>
+        <button class="addbtn" onclick="addimg206s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg206is" class="product1" src="https://m.media-amazon.com/images/I/51OKm41cx4L._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg206ts">SG Icon Skin-Fit Cricket Top</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg206ps">1095</h4>
+        </div>
+        <button class="addbtn" onclick="addimg207s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg207is" class="product1" src="https://m.media-amazon.com/images/I/81VgTSYk+wL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg207ts">SG Test RH Leather Batting Gloves, Adult - Cricket (Assorted)</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg207ps">2699</h4>
+        </div>
+        <button class="addbtn" onclick="addimg207s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg208is" class="product1" src="https://m.media-amazon.com/images/I/81KSXD4oNwL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg208ts">Boldfit Basketball Size 7 Professional Basket Ball for Indoor-Outdoor Training Basketball for Players</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg208ps">549</h4>
+        </div>
+        <button class="addbtn" onclick="addimg208s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg209is" class="product1" src="https://m.media-amazon.com/images/I/91RoFeiSJkL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg209ts">Sg Test Rh Batting Legguard, Adult, Multicolour, Wood</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg209ps">3999</h4>
+        </div>
+        <button class="addbtn" onclick="addimg209s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg210is" class="product1" src="https://m.media-amazon.com/images/I/817NWNZKiEL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg210ts">Whitedot Falcon 1.0 Duffle Backpack Cricket Kitbag, Black</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg210ps">1224</h4>
+        </div>
+        <button class="addbtn" onclick="addimg210s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg211is" class="product1" src="https://m.media-amazon.com/images/I/71rsEm78-FL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg211ts">Boldfit Volleyball Standard Size for Men and Women Sports Volley Ball with Free Pin Strong Grip Vollyball</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg211ps">749</h4>
+        </div>
+        <button class="addbtn" onclick="addimg211s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg212is" class="product1" src="https://m.media-amazon.com/images/I/31rP79r4RUL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg212ts">WorldCare® Knee Leg Sports Brace Support Sleeve Protector Basketball Volleyball (Xl) (Imported) </p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg212ps">3709</h4>
+        </div>
+        <button class="addbtn" onclick="addimg212s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg213is" class="product1" src="https://m.media-amazon.com/images/I/51lEznzIAML._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg213ts">Nivia Airstrike Football Stud Shoe</p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg213ps">389</h4>
+        </div>
+        <button class="addbtn" onclick="addimg213s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      <div class="pro">
+        <img id="addimg214is" class="product1" src="https://m.media-amazon.com/images/I/41-3wHKwcPL._AC_UL600_FMwebp_QL65_.jpg">
+        <div class="des">
+          <span>sangeeth</span>
+          <p class="ttl" id="addimg214ts">amz sports Nylon Volleyball Net (38x39 Inches, Black) </p>
+          <div class="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h4 id="addimg214ps">312</h4>
+        </div>
+        <button class="addbtn" onclick="addimg214s()"><i class="bi bi-cart4" id=""></i></button>
+      </div>
+      </div>
+  </section>
+ 
+ 
+  <script>
+    function addbackimg()
+      {
+        let img1=""
+      }
+      let addbtn1=document.querySelectorAll(".addbtn");
+      addbtn1.forEach((btn)=>{
+        btn.innerHTML="<b>AddToCart</b><i class='bi bi-cart4'></i>";
+      })
+      
+function exitdetailsindividual()
+{
+  if(detailsindividual.hidden==false)
+  detailsindividual.hidden=true;
+}
+  function sendtobuy()
+  {
+    let image=document.getElementById("placeimage").src;
+    localStorage.setItem("image",image);
+    let t=document.getElementById("producttitle").innerText;
+    localStorage.setItem("title",t);
+    let p=document.getElementById("price").innerText;
+    localStorage.setItem("price",p);
+  }
+  let hrs=document.getElementById("hrs");
+        let mn=document.getElementById("minutes");
+        let sec=document.getElementById("seconds");
+        let btn=document.querySelector("#btn");
+        addEventListener("load",function(){
+            setInterval(timer,10);
+        })
+        let msec=100,s=60,m=59,h=23;
+        function timer()
+        {
+            msec--;
+            if(msec==0)
+            {
+                msec=100;
+                s--;
+                if(s==0)
+                {
+                    s=59;
+                    m--;
+                    if(m==0)
+                    {
+                        m=59;
+                        h--;
+                    }
+                }
+            }
+            if(s<=9)
+            {
+                sec.innerHTML=`0${s}`;
+            }
+            else
+            sec.innerHTML=s;
+            if(m<=9)
+            {
+                mn.innerHTML=`0${m}`;
+            }
+            else
+            mn.innerHTML=m;
+            if(h<=9)
+            {
+                hrs.innerHTML=`0${h}`;
+            }
+            else
+            hrs.innerHTML=h;
+        }
+        let cartitems=document.getElementById("insidecart");
+        function closecartitems()
+        {
+          
+          if(cartitems.hidden==false)
+          cartitems.hidden=true;
+        }
+
+        function cartitemsad()
+        {
+          let searchcontentitem=document.getElementById("searchcontentitem");
+          if(searchcontentitem.hidden==false)
+          searchcontentitem.hidden=true;
+          if(cartitems.hidden==true)
+          cartitems.hidden=false;
+        }
+        let divsan,buynow,imag;
+        function addtocarteachitem(image,ttl,price)
+        {
+          divsan=document.createElement("div");
+          imag=document.createElement("img");
+          divsan.setAttribute("id","divsan");
+          imag.src=image;
+          imag.setAttribute("id","imgtocart");
+          let p=document.createElement("p");
+          console.log(p);
+          p.innerHTML=ttl
+          p.setAttribute("id","ttltocart")
+          let h=document.createElement("h6");
+          h.innerHTML=price;
+          h.setAttribute("id","pricetocart");
+          divsan.appendChild(imag);
+          divsan.appendChild(p);
+          divsan.appendChild(h);
+          buynow=document.createElement("button");
+          let btntxtbuy=document.createTextNode("buyNow");
+          let remnow=document.createElement("button");
+          let btntxtrm=document.createTextNode("Remove");
+          let a=document.createElement("a");
+          a.appendChild(btntxtbuy);
+          a.href="payment2.html";
+          console.log(a);
+          remnow.appendChild(btntxtrm);
+          remnow.setAttribute("id","rmbtn");
+          buynow.appendChild(a);
+          buynow.setAttribute("id","buybtn");
+          //rmbtn inka le
+          buynow.setAttribute("onclick","sendtobuy1()");
+          remnow.setAttribute("onclick","removeitem()");
+          remnow.setAttribute("id","removebutton");
+          divsan.appendChild(buynow);
+          divsan.appendChild(remnow);
+          console.log(buynow);
+
+          document.getElementById("insidecart").appendChild(divsan);
+        }
+        function remove(image,ttl,price)
+        {
+          //image.removeAttribute("id")
+          document.getElementById("divsan").removeChild(image);
+          document.getElementById("divsan").removeChild(ttl);
+          document.getElementById("divsan").removeChild(price);
+          //document.getElementById("divsan").removeChild(buynow);
+          document.getElementById("insidecart").removeChild(divsan);
+        }
+        
+        function sendtobuy1()
+        {
+          let image2=document.getElementById("imgtocart").src;
+          localStorage.setItem("image2",image2);
+          let ttl2=document.getElementById("ttltocart").innerText;
+          console.log(ttl2);
+          localStorage.setItem("ttl2",ttl2);
+          let price2=document.getElementById("pricetocart").innerText;
+          localStorage.setItem("price2",price2);
+        }
+        function removeitem()
+        {
+          let image2=document.getElementById("imgtocart").src;
+          let ttl2=document.getElementById("ttltocart").innerText;
+          let price2=document.getElementById("pricetocart").innerText;
+          console.log(image2,ttl2,price2);
+          remove(image2,ttl2,price2);
+        }
+        let details=document.getElementById("details");
+        function view()
+        {
+          if(details.hidden==true)
+          details.hidden=false;
+        }
+        function dhidden()
+        {
+          if(details.hidden==false)
+          details.hidden=true;
+        }
+        let detailslappy=document.getElementById("detailslappy");
+        function view1()
+        {
+          console.log(detailslappy);
+          console.log("bjsd");
+          if(detailslappy.hidden==true)
+          detailslappy.hidden=false;
+        }
+        function lhidden()
+        {
+          if(detailslappy.hidden==false)
+          detailslappy.hidden=true;
+        }
+        let incr=document.getElementById("incr").innerText;
+        let cl=document.querySelectorAll(".addbtn");
+        let count=0;
+          cl.forEach(clbtn=>{
+            clbtn.addEventListener('click',function increaseno(){
+              count++;
+              console.log(count);
+              incr=count;
+              document.getElementById("incr").innerHTML=incr;
+              console.log(incr);
+            })
+            let searchcontentitem=document.getElementById("searchcontentitem");
+          let addbtn=searchcontentitem.querySelectorAll(".addbtn");
+          addbtn.forEach(clbtn1=>{
+            clbtn1.addEventListener('click',function increaseno(){
+              count++;
+              console.log(count);
+              incr=count;
+              document.getElementById("incr").innerHTML=incr;
+              console.log(incr);
+            })
+          })
+          });
+          function searchitem()
+          {
+          let dis=document.getElementById("searchcontentitem");
+          console.log("sraech is clicked");
+          let usha=document.getElementById("usha");
+          if(dis.hidden==true)
+          {
+            console.log("opeb");
+          dis.hidden=false;
+          }
+          if(usha.hidden==true)
+          {
+            usha.hidden=false;
+          }
+         let product=document.createElement("div");
+        product.setAttribute("class","product");
+        product.setAttribute("id","productlist");
+         dis.appendChild(product);
+         let pro=document.querySelectorAll(".pro");
+         let product1=document.querySelectorAll(".product1")
+         
+         pro.forEach((p)=>{
+          let clone=p.cloneNode(true);
+         product.appendChild(clone);
+         })
+
+         //
+         }
+         function usha()
+         {
+          let dis=document.getElementById("searchcontentitem");
+          console.log("sraech is clicked");
+          let usha=document.getElementById("usha");
+          let addbtn=document.querySelectorAll(".addbtn")
+          addbtn.forEach((btn)=>{
+            btn.addEventListener('click',usha);
+          })
+          if(dis.hidden==false)
+          {
+            console.log("opeb");
+          dis.hidden=true;
+
+          }
+          if(usha.hidden==false)
+          {
+            dis.innerHTML='';
+            usha.hidden=true;
+          }
+         }
+         //addbtn
+         function searchsearch()
+         {
+          const searchbox=document.getElementById("search-item").value.toUpperCase();
+         const storeitems=document.getElementById("productlist");
+         const productsearch=document.querySelectorAll(".pro");
+         const pname=storeitems.getElementsByTagName("p");
+
+         for(var i=0;i<pname.length;i++){
+          let match=productsearch[i].getElementsByTagName("p")[0];
+          console.log(match);
+          if(match){
+            let textvalue=match.textContent || match.innerHTML;
+            if(textvalue.toUpperCase().indexOf(searchbox)>-1){
+              productsearch[i].style.display="";
+              console.log("if codnif");
+            }
+            else
+            {
+              productsearch[i].style.display="none";
+              console.log("else cond");
+            }
+          }
+         }
+         }
+         
+
+
+        function addimg201s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg201is").src;
+          let ttl=document.getElementById("addimg201ts").innerText;
+          let price=document.getElementById("addimg201ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg202s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg202is").src;
+          let ttl=document.getElementById("addimg202ts").innerText;
+          let price=document.getElementById("addimg202ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg203s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg203is").src;
+          let ttl=document.getElementById("addimg203ts").innerText;
+          let price=document.getElementById("addimg203ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg204s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg204is").src;
+          let ttl=document.getElementById("addimg204ts").innerText;
+          let price=document.getElementById("addimg204ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg205s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg205is").src;
+          let ttl=document.getElementById("addimg205ts").innerText;
+          let price=document.getElementById("addimg205ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg206s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg206is").src;
+          let ttl=document.getElementById("addimg206ts").innerText;
+          let price=document.getElementById("addimg206ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg207s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg207is").src;
+          let ttl=document.getElementById("addimg207ts").innerText;
+          let price=document.getElementById("addimg207ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg208s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg208is").src;
+          let ttl=document.getElementById("addimg208ts").innerText;
+          let price=document.getElementById("addimg208ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg209s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg209is").src;
+          let ttl=document.getElementById("addimg209ts").innerText;
+          let price=document.getElementById("addimg209ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg210s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg210is").src;
+          let ttl=document.getElementById("addimg210ts").innerText;
+          let price=document.getElementById("addimg210ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg211s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg211is").src;
+          let ttl=document.getElementById("addimg211ts").innerText;
+          let price=document.getElementById("addimg211ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg212s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg212is").src;
+          let ttl=document.getElementById("addimg212ts").innerText;
+          let price=document.getElementById("addimg212ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg213s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg213is").src;
+          let ttl=document.getElementById("addimg213ts").innerText;
+          let price=document.getElementById("addimg213ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        function addimg214s()
+        {
+          window.alert("Added to cart sucessfully");
+          let image=document.getElementById("addimg214is").src;
+          let ttl=document.getElementById("addimg214ts").innerText;
+          let price=document.getElementById("addimg214ps").innerText;
+          console.log(ttl,price);
+          addtocarteachitem(image,ttl,price);
+        }
+        
+  </script>
+     
+</body>
+</html>
